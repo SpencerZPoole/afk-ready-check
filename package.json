@@ -1,31 +1,18 @@
 {
 	"private": true,
 	"name": "foundry-afk-ready-check-module",
-	"version": "1.2.0",
-	"description": "A Foundry VTT module that let's users indicate AFK status, and allows GMs to issue a ready check pop up.",
+	"version": "1.2.1",
+	"description": "A Foundry VTT AFK status indicator and GM ready-check module updated for Foundry V14.",
 	"scripts": {
-		"package": "gulp package",
-		"build": "gulp build && gulp link",
-		"build:watch": "gulp watch",
-		"clean": "gulp clean && gulp link --clean",
-		"update": "npm install --save-dev gitlab:foundry-projects/foundry-pc/foundry-pc-types",
-		"publish": "gulp publish -u 1.2.0"
+		"clean": "node scripts/package-module.js clean",
+		"build": "node scripts/package-module.js build",
+		"package": "node scripts/package-module.js package",
+		"validate": "node --check src/scripts/arc.js && node --check src/scripts/ready-check.js && node --check src/module/preloadTemplates.js && node --check src/scripts/debug.js"
 	},
-	"author": "",
-	"license": "",
-	"devDependencies": {
-		"archiver": "^5.2.0",
-		"chalk": "^4.1.0",
-		"foundry-pc-types": "gitlab:foundry-projects/foundry-pc/foundry-pc-types",
-		"fs-extra": "^9.1.0",
-		"gulp": "^4.0.2",
-		"gulp-git": "^2.10.1",
-		"gulp-less": "^4.0.1",
-		"gulp-sass": "^4.1.0",
-		"gulp-typescript": "^6.0.0-alpha.1",
-		"json-stringify-pretty-compact": "^2.0.0",
-		"sass": "^1.32.6",
-		"typescript": "^4.1.4",
-		"yargs": "^16.2.0"
-	}
+	"author": "Jeremiah Verba; Foundry V14 compatibility update by Spencer Poole",
+  "license": "MIT",
+  "devDependencies": {
+    "archiver": "^7.0.1",
+    "fs-extra": "^11.3.5"
+  }
 }

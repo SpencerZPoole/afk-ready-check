@@ -1,16 +1,30 @@
 {
-  "name": "afk-ready-check",
+  "id": "afk-ready-check",
   "title": "AFK Ready Check",
-  "description": "an afk status indicator and GM-powered ready check",
-  "version": "1.2.0",
-  "author": "exodu",
-  "esmodules": ["./scripts/arc.js"],
+  "description": "An AFK status indicator and GM-powered ready check updated for Foundry Virtual Tabletop 14.",
+  "version": "1.2.1",
+  "authors": [
+    {
+      "name": "Jeremiah Verba"
+    },
+    {
+      "name": "Spencer Poole",
+      "url": "https://github.com/SpencerZPoole"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.361"
+  },
+  "esmodules": [
+    "scripts/arc.js"
+  ],
   "socket": true,
-  "styles": ["./styles/arc.css"],
-  "minimumCoreVersion": "0.5.0",
-  "compatibleCoreVersion": "0.8.7",
+  "styles": [
+    "styles/arc.css"
+  ],
   "license": "LICENSE",
   "url": "https://github.com/jeremiahverba/afk-ready-check",
-  "manifest": "https://raw.githubusercontent.com/jeremiahverba/afk-ready-check/master/src/module.json",
-  "download": "https://github.com/jeremiahverba/afk-ready-check/raw/main/package/afk-ready-check-v1.2.0.zip"
+  "manifest": "https://raw.githubusercontent.com/jeremiahverba/afk-ready-check/main/src/module.json",
+  "download": "https://github.com/jeremiahverba/afk-ready-check/releases/download/v1.2.1/afk-ready-check-v1.2.1.zip"
 }
