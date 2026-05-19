@@ -1,46 +1,31 @@
-<section class="window-content">
-  <section class="content">
-    <div class="tab active">
-      <div id="afk-ready-check">
-        <div class="afk-ready-content">
-          <div class="player-list-container">
-            <div class="flexrow buttonContainer">
-              <button type="submit" name="ready" id="readyButton">
-                <i class="far fa-dice-d20"></i>
-                Ready!
-              </button>
-              <button type="button" name="afk" id="afkButton">
-                <i class="fas fa-cancel"></i>
-                AFK.
-                {{#showCountdown this.countDownCounter}}
-                  <span>
-                    {{this.countDownCounter}}
-                  </span>
-                {{/showCountdown}}
-              </button>
-            </div>
-            <ul class="player-list-ul">
-              {{#each this.playerStatuses}}
-                <li class="player-status-entry">
-                  {{this.name}}
-                  :
-                  {{#switch this.status}}
-                    {{#case 0}}
-                      <i class="fas fa-dice-d20 player-not-afk"></i>
-                    {{/case}}
-                    {{#case 1}}
-                      <i class="fas fa-dice-d20 player-afk"></i>
-                    {{/case}}
-                    {{#case 2}}
-                      <i class="fas fa-question player-unknown"></i>
-                    {{/case}}
-                  {{/switch}}
-                </li>
-              {{/each}}
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<section id="afk-ready-check" class="afk-ready-check">
+  <div class="arc-actions flexrow">
+    <button type="button" data-action="ready" class="arc-ready-button">
+      <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+      <span>Ready!</span>
+    </button>
+    <button type="button" data-action="afk" class="arc-afk-button">
+      <i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
+      <span>AFK</span>
+      <span class="arc-countdown" data-countdown {{#unless countdownVisible}}hidden{{/unless}}>
+        {{countDownCounter}}
+      </span>
+    </button>
+  </div>
+
+  <ol class="arc-player-list">
+    {{#each playerStatuses}}
+      <li class="arc-player-status {{cssClass}}" data-user-id="{{userId}}">
+        <span class="arc-player-name">{{name}}</span>
+        <span class="arc-player-state" title="{{title}}">
+          <i class="{{iconClass}}" aria-hidden="true"></i>
+          <span>{{label}}</span>
+        </span>
+      </li>
+    {{else}}
+      <li class="arc-player-status arc-empty">
+        <span>No player users found.</span>
+      </li>
+    {{/each}}
+  </ol>
 </section>

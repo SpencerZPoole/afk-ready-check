@@ -1,37 +1,113 @@
-#afk-ready-check-window {
+.afk-ready-check-window {
   z-index: 100;
 }
-#readyButton {
-  max-height: 3rem;
-}
-#afkButton {
-  max-height: 3rem;
-}
-.buttonContainer {
-  position: relative;
-  top: 0;
-}
-.player-list-container {
-  font-size: 2rem;
-}
-.player-afk {
-  color: red;
-}
-.player-not-afk {
-  color: green;
-}
-.player-unknown {
-  color: yellow;
-  animation: Pulsate 1s linear infinite;
+
+.afk-ready-check {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
 }
 
-@keyframes Pulsate {
+.afk-ready-check .arc-actions {
+  gap: 0.5rem;
+}
+
+.afk-ready-check .arc-actions button {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.4rem;
+  justify-content: center;
+  min-height: 2.5rem;
+  white-space: nowrap;
+}
+
+.afk-ready-check .arc-countdown {
+  align-items: center;
+  background: var(--color-bg-btn-minor-inactive, rgba(0, 0, 0, 0.25));
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  justify-content: center;
+  min-width: 1.6rem;
+  padding: 0.1rem 0.35rem;
+}
+
+.afk-ready-check .arc-player-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  list-style: none;
+  margin: 0;
+  max-height: 18rem;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.afk-ready-check .arc-player-status {
+  align-items: center;
+  border: 1px solid var(--color-border-light-tertiary, rgba(255, 255, 255, 0.16));
+  border-radius: 6px;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  min-height: 2rem;
+  padding: 0.35rem 0.5rem;
+}
+
+.afk-ready-check .arc-player-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.afk-ready-check .arc-player-state {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 0.3rem;
+  white-space: nowrap;
+}
+
+.arc-status-icon {
+  display: inline-block;
+  flex: 0 0 auto;
+  margin-left: 0.35rem;
+}
+
+.player-afk {
+  color: #d65f5f;
+}
+
+.player-not-afk {
+  color: #5fbf75;
+}
+
+.player-unknown {
+  color: #d8b64c;
+}
+
+.arc-status-icon.player-unknown,
+.afk-ready-check .player-unknown .arc-player-state i {
+  animation: arc-pulsate 1s linear infinite;
+}
+
+.afk-ready-check .arc-empty {
+  color: var(--color-text-subtle, #aaa);
+  justify-content: center;
+}
+
+@keyframes arc-pulsate {
   from {
     opacity: 1;
   }
+
   50% {
-    opacity: 0;
+    opacity: 0.35;
   }
+
   to {
     opacity: 1;
   }
