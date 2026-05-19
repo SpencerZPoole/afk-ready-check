@@ -2,7 +2,7 @@
 
 A Foundry Virtual Tabletop module that lets a GM start a ready check and lets players answer whether they are ready or AFK.
 
-This update modernizes the original AFK Ready Check module for Foundry Virtual Tabletop V14. It preserves the original chat-command workflow while replacing deprecated Foundry APIs with V14-compatible application, chat command, socket, and player-list handling.
+This public fork modernizes Jeremiah Verba's original AFK Ready Check module for Foundry Virtual Tabletop V14. It preserves the original chat-command workflow while replacing deprecated Foundry APIs with V14-compatible application, chat command, socket, and player-list handling.
 
 ## Compatibility
 
@@ -24,7 +24,7 @@ This update modernizes the original AFK Ready Check module for Foundry Virtual T
 Use Foundry's **Install Module** dialog and paste this manifest URL:
 
 ```text
-https://raw.githubusercontent.com/jeremiahverba/afk-ready-check/main/src/module.json
+https://raw.githubusercontent.com/SpencerZPoole/afk-ready-check/main/src/module.json
 ```
 
 After installing, enable **AFK Ready Check** in your world.
@@ -59,11 +59,11 @@ The V14 compatibility update was validated against Foundry `14.361` with:
 
 ## Screenshots
 
-<img src="https://raw.githubusercontent.com/jeremiahverba/afk-ready-check/main/ready-check-afk.png" alt="Image of AFK Ready Check AFK state" width="400"/>
+<img src="https://raw.githubusercontent.com/SpencerZPoole/afk-ready-check/main/ready-check-afk.png" alt="Image of AFK Ready Check AFK state" width="400"/>
 
-<img src="https://raw.githubusercontent.com/jeremiahverba/afk-ready-check/main/ready-check-ready.png" alt="Image of AFK Ready Check ready state" width="400"/>
-<img src="https://raw.githubusercontent.com/jeremiahverba/afk-ready-check/main/ready-check-unknown.png" alt="Image of AFK Ready Check waiting state" width="400"/>
-<img src="https://raw.githubusercontent.com/jeremiahverba/afk-ready-check/main/ready-check-player-box.png" alt="Image of AFK Ready Check player list badge" width="400"/>
+<img src="https://raw.githubusercontent.com/SpencerZPoole/afk-ready-check/main/ready-check-ready.png" alt="Image of AFK Ready Check ready state" width="400"/>
+<img src="https://raw.githubusercontent.com/SpencerZPoole/afk-ready-check/main/ready-check-unknown.png" alt="Image of AFK Ready Check waiting state" width="400"/>
+<img src="https://raw.githubusercontent.com/SpencerZPoole/afk-ready-check/main/ready-check-player-box.png" alt="Image of AFK Ready Check player list badge" width="400"/>
 
 ## Development
 
