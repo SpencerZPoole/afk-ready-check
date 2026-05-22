@@ -99,8 +99,8 @@ Created with help from: <https://gitlab.com/foundry-projects/foundry-pc/create-f
 
 Licensed under the MIT License. See [LICENSE.md](LICENSE.md) and [src/LICENSE](src/LICENSE).
 
-## Support
+## Donate
 
-If this compatibility fork helped your table, optional support for Spencer's V14 maintenance, packaging, screenshots, and release notes is welcome: [paypal.me/mrpooley92](https://paypal.me/mrpooley92).
+If this compatibility fork helped your table, you can donate to support Spencer's V14 maintenance, packaging, screenshots, and release notes through [GitHub Sponsors](https://github.com/sponsors/SpencerZPoole) or [PayPal](https://paypal.me/mrpooley92). GitHub Sponsors is best for recurring sponsorships; PayPal works well for one-time donations.
 
 The original author, project history, and license terms remain credited above.
