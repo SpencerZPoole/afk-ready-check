@@ -101,6 +101,9 @@ Licensed under the MIT License. See [LICENSE.md](LICENSE.md) and [src/LICENSE](s
 
 ## Donate
 
-If this compatibility fork helped your table, you can donate to support Spencer's V14 maintenance, packaging, screenshots, and release notes through [GitHub Sponsors](https://github.com/sponsors/SpencerZPoole) or [PayPal](https://paypal.me/mrpooley92). GitHub Sponsors is best for recurring sponsorships; PayPal works well for one-time donations.
+If this compatibility fork helped your table, donations are welcome to support Spencer's V14 maintenance, packaging, screenshots, and release notes. GitHub Sponsors is best for recurring sponsorships; PayPal works well for one-time donations.
+
+[![Sponsor on GitHub](https://img.shields.io/badge/GitHub%20Sponsors-Donate-ea4aaa?style=flat&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/SpencerZPoole)
+[![Donate with PayPal](https://img.shields.io/badge/PayPal-One--time%20donation-00457C?style=flat&logo=paypal&logoColor=white)](https://paypal.me/mrpooley92)
 
 The original author, project history, and license terms remain credited above.
