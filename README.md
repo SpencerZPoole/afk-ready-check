@@ -19,12 +19,12 @@ This public fork modernizes Jeremiah Verba's original AFK Ready Check module for
 - Ready check state is tracked by stable Foundry user IDs, so display names with spaces are supported.
 - The ready check HUD uses Foundry V14 `ApplicationV2`.
 
-## Installation
+## Install
 
-Use Foundry's **Install Module** dialog and paste this manifest URL:
+In Foundry, open **Add-on Modules > Install Module**, paste this into **Manifest URL**, and install this public V14 compatibility fork:
 
 ```text
-https://raw.githubusercontent.com/SpencerZPoole/afk-ready-check/main/src/module.json
+https://github.com/SpencerZPoole/afk-ready-check/releases/latest/download/module.json
 ```
 
 After installing, enable **AFK Ready Check** in your world.
