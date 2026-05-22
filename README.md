@@ -98,3 +98,9 @@ Original module by Jeremiah Verba: <https://github.com/jeremiahverba/afk-ready-c
 Created with help from: <https://gitlab.com/foundry-projects/foundry-pc/create-foundry-project/-/wikis/home>
 
 Licensed under the MIT License. See [LICENSE.md](LICENSE.md) and [src/LICENSE](src/LICENSE).
+
+## Support
+
+If this compatibility fork helped your table, optional support for Spencer's V14 maintenance, packaging, screenshots, and release notes is welcome: [paypal.me/mrpooley92](https://paypal.me/mrpooley92).
+
+The original author, project history, and license terms remain credited above.
