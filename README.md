@@ -4,6 +4,10 @@ A Foundry Virtual Tabletop module that lets a GM start a ready check and lets pl
 
 This public fork modernizes Jeremiah Verba's original AFK Ready Check module for Foundry Virtual Tabletop V14. It preserves the original chat-command workflow while replacing deprecated Foundry APIs with V14-compatible application, chat command, socket, and player-list handling.
 
+**Support:** If this compatibility fork helps your table, donations are optional and support Spencer's V14 maintenance, packaging, screenshots, and release notes. Original author credit remains below.
+
+[![Sponsor on GitHub](https://img.shields.io/badge/GitHub%20Sponsors-Donate-ea4aaa?style=flat&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/SpencerZPoole) [![Donate with PayPal](https://img.shields.io/badge/PayPal-One--time%20donation-00457C?style=flat&logo=paypal&logoColor=white)](https://paypal.me/mrpooley92)
+
 ## Compatibility
 
 - Foundry Virtual Tabletop: minimum `14`, verified `14.361`
@@ -98,12 +102,3 @@ Original module by Jeremiah Verba: <https://github.com/jeremiahverba/afk-ready-c
 Created with help from: <https://gitlab.com/foundry-projects/foundry-pc/create-foundry-project/-/wikis/home>
 
 Licensed under the MIT License. See [LICENSE.md](LICENSE.md) and [src/LICENSE](src/LICENSE).
-
-## Donate
-
-If this compatibility fork helped your table, donations are welcome to support Spencer's V14 maintenance, packaging, screenshots, and release notes. GitHub Sponsors is best for recurring sponsorships; PayPal works well for one-time donations.
-
-[![Sponsor on GitHub](https://img.shields.io/badge/GitHub%20Sponsors-Donate-ea4aaa?style=flat&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/SpencerZPoole)
-[![Donate with PayPal](https://img.shields.io/badge/PayPal-One--time%20donation-00457C?style=flat&logo=paypal&logoColor=white)](https://paypal.me/mrpooley92)
-
-The original author, project history, and license terms remain credited above.
